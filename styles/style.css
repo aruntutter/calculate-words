@@ -17,19 +17,61 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 108px auto;
+}
+
+.card-container {
+  width: 400px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #6c584c;
+}
+
+.card-container h1 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  margin-bottom: 27px;
+  color: #1c2042;
+}
+
+#input {
+  width: 300px;
+  height: 300px;
+  padding: 8px;
+  margin-bottom: 30px;
+  background-color: #c2c5aa;
 }
 
 .btn {
   display: inline-block;
-  border-radius: 8px;
+  border-radius: 6px;
   padding: 0.5rem 1.5rem;
-  margin-top: 0.5rem;
   text-transform: capitalize;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   cursor: pointer;
-  /* customize */
-  background-color: #1c2042;
-  color: white;
-  border: 2px solid #1c2042;
+  
+  background-color: #c2c5aa;
+  color: #1c2042;
+  border: 2px solid #c2c5aa;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #6c584c;
+}
+
+.output{
+  margin: 20px auto;
+  color: #1c2042;
 }
